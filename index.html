@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Mi Portafolio</title>
+  <link rel="icon" type="image/" href="images/portfolio-pestaña.svg">
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header>
+
+    <img class="header-img hover-blanco-img" src="images/foto.jpg" alt="Foto de Leonardo" tabindex="0"> </img>
+    <h1 class="header hover-verde" tabindex="0">Ider Leonardo Toro Vega</h1>
+    <h2 class="subtitle hover-blanco" tabindex="0">Curso Cuarto " A "</h2>
+
+    <nav>
+      <ul class="navigation">
+        <li class="nav-item"><a href="#acerca">Acerca de</a> </li>
+        <li class="nav-item"> <a href="#proyecto">Mis Proyectos</a> </li>
+        <li class="nav-item"> <a href="#contacto">Contacto</a> </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section>
+      <h2 class="header hover-verde" id="acerca" tabindex="0">Acerca de</h2>
+
+      <p class="intro hover-verde" tabindex="0">
+        Hola mi nombre es Leonardo, soy estudiante de la facultad de ciencias informaticas ( FACCI ), cursando el cuarto
+        semestre de la carrera de Tecnologias de la Informacion.
+      </p>
+
+      <ul class="social-media">
+
+        <li>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="Twitter de Leonardo" />
+            <p class="social-link-text">Twitter</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com" target="_blank">
+            <img src="images/github-logo.png" alt="GitHub de Leonardo" />
+            <p class="social-link-text">GitHub</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn de Leonardo" />
+            <p class="social-link-text">LinkedIn</p>
+          </a>
+        </li>
+
+      </ul>
+
+    </section>
+
+    <section>
+
+      <h2 class="header hover-verde" id="proyecto" tabindex="0">Mis Proyectos</h2>
+      <p class="intro hover-verde" tabindex="0">A continuacion se Presentan Algunos Proyectos desarrollados.</p>
+
+      <div class="carousel">
+        <button class="arrow arrow-left" aria-label="Boton para ir hacia atrás"></button>
+
+        <div class="window">
+          <ul class="project-container">
+
+            <!-- Color secundario  para daler color blanco a los alt y se puedean ver si no hay imagen -->
+            <li class="project1-container"><button class="project1 project">
+                <img src="images/project1.png" class="project-img color-secundario"
+                  alt="Imagen del proyecto  1.png"></button>
+            </li>
+
+            <li class="project2-container"><button class="project2 project">
+                <img src="images/project2.png" class="project-img color-secundario"
+                  alt="Imagen del proyecto 2.png"></button>
+            </li>
+
+            <li class="project3-container" aria-hidden="true"><button class="project3 project">
+              <img src="<!-- images/project3.png -->" class="project-img color-secundario"
+                  alt="Imagen del proyecto 3.png"></button>
+            </li>
+
+            <li class="project4-container" aria-hidden="true"><button class="project4 project" tabindex="-1"><img
+                  src="images/project4.png" class="project-img color-secundario"
+                  alt="Imagen del proyecto  4.png"></button>
+            </li>
+            <li class="project5-container" aria-hidden="true"><button class="project5 project" tabindex="-1"><img
+                  src="images/project1-1.jpg" class="project-img color-secundario"
+                  alt="Imagen del proyecto  5.png"></button>
+            </li>
+
+          </ul>
+        </div>
+
+        <button class="arrow arrow-right" aria-label="Boton para ir hacia adelante"></button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="contact-section">
+
+    <h2 class="header hover-verde" id="contacto" tabindex="0">Contacto</h2>
+    <p class="intro2 space-bot  margin-bot hover-verde" tabindex="0">Llena el siguiente formulario para contactarnos</p>
+
+    <form class="form-container form-label">
+
+      <label>Nombre</label>
+      <input class="space-bot"  type="text" aria-label="nombre" id="name" placeholder="Ingrese su nombre aquí" />
+      <span id="name-error" aria-live="assertive"></span> <br />
+
+      <label>Correo</label>
+      <input class="space-bot" type="text" aria-label="correo" placeholder="Ingrese su correo electrónico"/> <br />
+
+      <label class="message-input space-bot">Mensaje <input type="text" placeholder="Escriba su mensaje" /> <br /> </label>
+      <button class="boton-borde send-button">Enviar</button>
+
+    </form>
+
+  </footer>
+
+  <div class="notification" aria-live="assertive"></div>
+
+  <div class="modal-container">
+
+    <div class="modal">
+
+      <h2 class="header" id="modal-header" tabindex="0">Ejemplo de un proyecto mio</h2>
+      <p class="intro2 hover-verde" tabindex="0">Este proyecto realiza...</p>
+      <img src="images/project1-1.jpg" class="modal-project-image color-secundario" alt="pantallazo del proyecto" />
+
+      <footer class="intro2 pie-project"> -Leonardo Toro</footer>
+
+      <button class="boton-borde modal-button">Cerrar</button>
+
+    </div>
+
+  </div>
+
+  <script src="index.js" type="text/javascript"></script>
+
+</body>
+
+</html>
